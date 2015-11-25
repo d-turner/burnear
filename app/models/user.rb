@@ -1,7 +1,12 @@
 class User < ActiveRecord::Base
-  has_many :messages
-  validates :name,
-      presence: true,
-      uniqueness: true
-
+  has_and_belongs_to_many :chats
+  validates :username,
+            presence: true,
+            uniqueness: true
+  validates :password_hash => false,
+            presence: true
+  validates :email,
+            presence: true,
+            uniqueness: true,
+            format: {with: /@/}
 end
