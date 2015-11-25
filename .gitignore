@@ -17,4 +17,6 @@
 /tmp
 
 # Ingnore workspace 
-.idea/workspace.xml
+/.idea/workspace.xml
+# Ignore idea
+/.idea/*
