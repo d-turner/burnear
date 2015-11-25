@@ -18,3 +18,4 @@
 
 # Ingnore workspace 
 .idea/workspace.xml
+/.idea/*
